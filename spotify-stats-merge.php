@@ -2,7 +2,7 @@
 <?php 
 
 $trackdb = [];
-$data = explode("\n", file_get_contents('/home/luc/p/php/spotify-shuffle/data/tracks-jojo'));
+$data = explode("\n", file_get_contents($argv[1]));
 foreach ($data as $data_singular) {
 	if ($data_singular == '') continue;
 	$data_singular = explode("\t", $data_singular);
